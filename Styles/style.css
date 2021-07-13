@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: Gilroy;
+    background: url("https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhbCUyMGxhbmRzY2FwZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    background-position: center center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.weather_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3% 30px;
+    grid-gap: 35px;
+    background-color: #282828;
+    width: 700px;
+    height: 450px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 65%);
+    color: #fff;
+    border-radius: 30px;
+}
+.search_box {
+    width: 70%;
+    height: 50px;
+}
+form {
+    display: flex;
+    grid-gap: 5px;
+}
+input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.main_info .city {
+    font-size: 35px;
+}
+.main_info .temperature {
+    font-size: 33px;
+}
+button {
+    background-color: #3d3d3d;
+    height: 47px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #282828;
+}
+input:focus {
+    background-color: #282828;
+}
+.city {
+    margin-bottom: 20px;
+}
+.add_info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    font-size: 20px;
+}
+.add_info .condition {
+    font-size: 27px !important;
+}
+svg {
+    stroke: #fff;
+    stroke-width: 3;
+}
