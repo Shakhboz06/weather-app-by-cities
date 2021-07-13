@@ -20,11 +20,9 @@ let reload = (action) => {
                 console.log(data)
                 let searchWeather = () => {
                     const { temp, humidity } = data.main
-                    let description = data.weather
+                    const {description} = data.weather[0]
 
-                    for (let item of description) {
-                        condition.innerText = item.description
-                    }
+                    condition.innerText = description
                     span.innerText = data.name
                     temperature.innerText = `${parseInt(temp) - 273} °C`
                     humidity_t.innerText = `Humidity rate: ${humidity}%`
